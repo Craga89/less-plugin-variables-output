@@ -13,7 +13,7 @@ lessc --variables-output=customFilename.json <input.less> <output.css>
 ```
 
 ## Programmatic usage
-```
+```js
 const less = require('less');
 const VariablesOutput = require('less-plugin-variables-output');
 
