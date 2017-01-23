@@ -25,7 +25,8 @@ const renderLess = (contents, opts, success, done) => {
 	less.render(contents, {
 		plugins: [
 			new VariablesOutput(opts)
-		]
+		],
+		sourceMap: {}
 	},
 	function(err, css) {
 		if (err) {
