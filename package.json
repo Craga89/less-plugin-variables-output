@@ -1,0 +1,32 @@
+{
+  "name": "less-plugin-variables-output",
+  "version": "0.1.0-alpha",
+  "description": "Adds output of all top-level varibles to a JSON file",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Craga89/less-plugin-variables-output.git"
+  },
+  "keywords": [
+    "less",
+    "plugin",
+    "variable",
+    "output",
+    "json"
+  ],
+  "author": "Craig Michael Thompson <craig@craigsworks.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Craga89/less-plugin-variables-output/issues"
+  },
+  "homepage": "https://github.com/Craga89/less-plugin-variables-output#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
+}
