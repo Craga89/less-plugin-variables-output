@@ -23,8 +23,10 @@ less.render(<css>, {
 			filename: 'variables.json'
 		})
 	]
-})
+});
 ```
 
 ## Testing
-No tests as of yet
+```
+npm test
+```
