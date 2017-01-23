@@ -1,5 +1,5 @@
 # less-plugin-variables-output
-Adds output of all top-level varibles to a JSON file
+Adds output of all top-level variables to a JSON file
 
 ## Install plugin
 ```
