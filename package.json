@@ -1,10 +1,10 @@
 {
   "name": "less-plugin-variables-output",
-  "version": "0.1.0-alpha",
+  "version": "1.0.0",
   "description": "Adds output of all top-level varibles to a JSON file",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "less": "^2.7.2"
+    "chai": "^3.5.0",
+    "less": "^2.7.2",
+    "mocha": "^3.2.0"
   }
 }

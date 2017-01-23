@@ -1,5 +1,5 @@
 # less-plugin-variables-output
-Adds output of all top-level varibles to a JSON file
+Adds output of all top-level variables to a JSON file
 
 ## Install plugin
 ```
@@ -13,7 +13,7 @@ lessc --variables-output=customFilename.json <input.less> <output.css>
 ```
 
 ## Programmatic usage
-```
+```js
 const less = require('less');
 const VariablesOutput = require('less-plugin-variables-output');
 
@@ -23,8 +23,10 @@ less.render(<css>, {
 			filename: 'variables.json'
 		})
 	]
-})
+});
 ```
 
 ## Testing
-No tests as of yet
+```
+npm test
+```
