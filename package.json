@@ -29,6 +29,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "less": "^2.7.2",
-    "mocha": "^3.2.0"
-  }
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {}
 }
