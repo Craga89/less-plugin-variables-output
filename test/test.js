@@ -40,7 +40,10 @@ const renderLess = (contents, opts, success, done) => {
 			done(err);
 		}
 		else {
-			const output = JSON.parse(fs.readFileSync(opts.filename));
+			let output = {};
+			if (opts.filename) {
+				output = JSON.parse(fs.readFileSync(opts.filename));
+			}
 			success(output, css);
 			done();
 		}
@@ -76,6 +79,16 @@ describe(pkg.name, () => {
 			expect(fs.existsSync(qualifyPath(dir1))).to.be.true;
 			expect(fs.existsSync(qualifyPath(dir1, dir2))).to.be.true;
 			expect(fs.existsSync(filename)).to.be.true;
+		},
+		done);
+	});
+
+	it('Should invoke callback as given callback option if provided', (done) => {
+		let variables = {};
+		const callback = (vars) => variables = vars;
+
+		renderLess(LESS, { callback }, (output) => {
+			compareVariables(VARIABLES, variables);
 		},
 		done);
 	});
