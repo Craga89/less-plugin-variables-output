@@ -1,14 +1,14 @@
 {
-  "name": "less-plugin-variables-output",
-  "version": "1.2.0",
-  "description": "Adds output of all top-level variables to a JSON file",
+  "name": "less-plugin-variables-export",
+  "version": "2.0.0",
+  "description": "Adds output of all (not only top-level) variables to a JSON file(s)",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Craga89/less-plugin-variables-output.git"
+    "url": "git+https://github.com/kusmierz/less-plugin-variables-export.git"
   },
   "keywords": [
     "less",
@@ -17,20 +17,26 @@
     "output",
     "json"
   ],
-  "author": "Craig Michael Thompson <craig@craigsworks.com>",
+  "author": [
+    "Craig Michael Thompson <craig@craigsworks.com>",
+    "Adam Kusmierz <adam@kusmierz.be>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Craga89/less-plugin-variables-output/issues"
+    "url": "https://github.com/kusmierz/less-plugin-variables-export/issues"
   },
-  "homepage": "https://github.com/Craga89/less-plugin-variables-output#readme",
+  "homepage": "https://github.com/kusmierz/less-plugin-variables-export#readme",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">6.0.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.1.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-import": "^0.13.0",
+    "eslint-plugin-import": "^2.8.0",
     "less": "^2.7.2",
-    "mkdirp": "^0.5.1",
-    "mocha": "^3.2.0",
+    "mocha": "^5.2.0",
     "rimraf": "^2.5.4"
   },
   "dependencies": {}

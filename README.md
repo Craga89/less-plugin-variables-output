@@ -1,26 +1,33 @@
-# less-plugin-variables-output
-Adds output of all top-level variables to a JSON file
+# less-plugin-variables-export
+Adds output of all (not only top-level) variables to a JSON file
 
 ## Install plugin
 ```
-npm install --save-dev less-plugin-variables-output
+npm install --save-dev less-plugin-variables-export
 ```
 
 ## Command line usage (lessc)
 ```
-lessc --variables-output <input.less> <output.css>
-lessc --variables-output=customFilename.json <input.less> <output.css>
+lessc --variables-export <input.less> <output.css>
 ```
+
+Variables will be stored in the `<input.json>` file.
+
+```
+lessc --variables-export=./node_modules/semantic-ui-less/definitions:./node_modules/semantic-ui-less/themes/default <input.less> <output.css>
+```
+
+It should simplify the output when using Semantic UI library.
 
 ## Programmatic usage
 ```js
 const less = require('less');
-const VariablesOutput = require('less-plugin-variables-output');
+const VariablesExport = require('less-plugin-variables-export');
 
 less.render(<css>, {
 	plugins: [
-		new VariablesOutput({
-			filename: 'variables.json'
+		new VariablesExport({
+			paths: './node_modules/semantic-ui-less/definitions'
 		})
 	]
 });
