@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-variables-export",
-  "version": "2.0.4",
+  "version": "2.0.2",
   "description": "Adds output of all (not only top-level) variables to a JSON file(s)",
   "main": "lib/index.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "output",
     "json"
   ],
-  "author": "Craig Michael Thompson <craig@craigsworks.com>",
-  "contributors": [
+  "author": [
+    "Craig Michael Thompson <craig@craigsworks.com>",
     "Adam Kusmierz <adam@kusmierz.be>"
   ],
   "license": "MIT",
@@ -30,14 +30,14 @@
     "node": ">6.0.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^5.15.1",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "chai": "^4.1.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-import": "^0.13.0",
-    "eslint-plugin-import": "^2.16.0",
-    "less": "^3.9.0",
-    "mocha": "^6.0.2",
-    "rimraf": "^2.6.3"
+    "eslint-plugin-import": "^2.8.0",
+    "less": "^2.7.2",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.5.4"
   },
   "dependencies": {}
 }
