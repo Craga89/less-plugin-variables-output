@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-variables-export",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Adds output of all (not only top-level) variables to a JSON file(s)",
   "main": "lib/index.js",
   "scripts": {
